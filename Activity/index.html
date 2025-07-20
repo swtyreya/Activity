@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Client Information Form</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Client Information Form</h1>
+            <img src="assets/logo.png" alt="Company Logo" class="logo">
+        </header>
+        <form>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" required>
+                
+                <label for="company">Company/Organization (if any):</label>
+                <input type="text" id="company" name="company">
+                
+                <label for="position">Position/Role:</label>
+                <input type="text" id="position" name="position">
+                
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone">
+                
+                <label for="contact-method">Preferred Method of Contact:</label>
+                <select id="contact-method" name="contact-method">
+                    <option value="email">Email</option>
+                    <option value="phone">Phone</option>
+                    <option value="messaging-app">Messaging App</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Project Details</legend>
+                <label for="project-title">Project Name/Title:</label>
+                <input type="text" id="project-title" name="project-title" required>
+                
+                <fieldset class="checkbox-group">
+                <legend>Type of Service Required:</legend>
+
+                <label>
+                <input type="checkbox" name="service" value="web-development">
+                Web Development
+                </label>
+
+                <label>
+                <input type="checkbox" name="service" value="graphic-design">
+                Graphic Design
+                </label>
+
+                <label>
+                <input type="checkbox" name="service" value="branding">
+                Branding
+                </label>
+
+                <label>
+                <input type="checkbox" name="service" value="branding">
+                Marketing
+                </label>
+            </fieldset>
+
+                
+                <label for="description">Brief Description of the Project:</label>
+                <textarea id="description" name="description" rows="4"></textarea>
+                
+                <label for="target-audience">Target Audience:</label>
+                <input type="text" id="target-audience" name="target-audience">
+                
+                <label for="deadline">Deadline (if any):</label>
+                <input type="date" id="deadline" name="deadline">
+                
+                <label for="budget">Budget Range:</label>
+                <input type="text" id="budget" name="budget">
+            </fieldset>
+
+            <fieldset>
+                <legend>File & Content Provision</legend>
+                <p>Will you provide content (text, images, etc.)?</p>
+                <div class="radio-group">
+                <label><input type="radio" name="content-provide" value="yes"> Yes</label>
+                <label><input type="radio" name="content-provide" value="no"> No</label>
+                <label><input type="radio" name="content-provide" value="partially"> Partially</label>
+                </div>
+
+                <p>Do you have brand assets (logo, colors, fonts)?</p>
+                <div class="radio-group">
+                <label><input type="radio" name="assets" value="yes"> Yes</label>
+                <label><input type="radio" name="assets" value="still-in-development"> Still in development</label>
+                </div>
+   
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Approvals & Follow-ups</legend>
+                <label for="approval">Who will approve designs or decisions on your side?</label>
+                <input type="text" id="approval" name="approval">
+                
+                <label for="update">How often do you prefer updates?</label>
+                <select id="update" name="update">
+                    <option value="daily">Daily</option>
+                    <option value="weekly">Weekly</option>
+                    <option value="key-milestones">At key milestones</option>
+                </select>
+            </fieldset>
+            
+           <fieldset>
+            <legend>Signature (if printed)</legend>
+            <div class="signature-line"></div>
+            <p class="signature-label">SIGNATURE OVER PRINTED NAME</p>
+           </fieldset>
+
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
