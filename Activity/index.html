@@ -10,6 +10,7 @@
     <div class="container">
         <header>
             <h1>Client Information Form</h1>
+            <p class="form-description">This form helps us gather essential information to ensure your project is handled efficiently.</p>
             <img src="assets/logo.png" alt="Company Logo" class="logo">
         </header>
         <form>
@@ -62,7 +63,7 @@
                 </label>
 
                 <label>
-                <input type="checkbox" name="service" value="branding">
+                <input type="checkbox" name="service" value="marketing">
                 Marketing
                 </label>
             </fieldset>
@@ -78,7 +79,11 @@
                 <input type="date" id="deadline" name="deadline">
                 
                 <label for="budget">Budget Range:</label>
-                <input type="text" id="budget" name="budget">
+                <div class="radio-group">
+                <label><input type="radio" name="budget" value="below 10,000"> below 10,000</label>
+                <label><input type="radio" name="budget" value="10,000 - 30,000"> 10,000 - 30,000</label>
+                <label><input type="radio" name="budget" value="50,000 above"> 50,000 above</label>
+                </div>
             </fieldset>
 
             <fieldset>
